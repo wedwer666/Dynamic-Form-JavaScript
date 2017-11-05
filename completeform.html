@@ -1,0 +1,973 @@
+ <!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<html>
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> -->
+<!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> -->
+    <!--  
+    Document Title
+    ============================================
+=    -->
+
+    <!--  
+    Favicons
+    =============================================
+    -->
+     
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <!-- another set of icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/images/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/images/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/images/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/images/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <!-- the end of them -->
+    <!-- <link rel="manifest" href="/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--  
+    Stylesheets
+    =============================================
+    
+    -->
+    <!-- Default stylesheets-->
+    <link href="assets/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Template specific stylesheets-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Volkhov:400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="assets/lib/animate.css/animate.css" rel="stylesheet">
+    <link href="assets/lib/components-font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/lib/et-line-font/et-line-font.css" rel="stylesheet">
+    <link href="assets/lib/flexslider/flexslider.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/owl.carousel/dist/assets/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/lib/magnific-popup/dist/magnific-popup.css" rel="stylesheet">
+    <link href="assets/lib/simple-text-rotator/simpletextrotator.css" rel="stylesheet">
+    <!-- Main stylesheet and color file-->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <style>
+    
+
+.responsive-fieldset {display:table-cell; width: 100%}
+
+html {
+    height: 100%;
+ 
+}
+
+body {
+    /*font-family: montsserrat, arial, verdana;*/
+}
+/*form styles*/
+.msform {
+
+    margin-top: 130px;
+    text-align: center;
+    /*position: relative;*/
+}
+.msform fieldset {
+    /*   margin-left: 130px;
+    margin-right: 130px;*/
+    background: white;
+    border: 0 none;
+    border-radius: 3px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 30px 30px;
+
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+
+    /*stacking fieldsets above each other*/
+    position: absolute;
+}
+/*Hide all except first fieldset*/
+.msform:not(:first-of-type) fieldset {
+    display: none;
+}
+/*inputs*/
+.msform input, .msform textarea {
+    padding: 15px;
+    /*padding-bottom: 15px;*/
+  
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+/*buttons*/
+.msform .action-button {
+    /*
+    padding-right: 150px;
+    padding-left: 150px;*/
+
+    background-color: blue;
+    font-weight: bold;
+    color: white;
+    /*border:  none;*/
+    /*border-radius: 10px;*/
+    cursor: pointer;
+    /*padding: 10px 5px;*/
+    margin: 4px;
+     /*margin-left: ($spacer-x * .25) !important;*/
+}
+.msform .action-button:hover, .msform .action-button:focus {
+    box-shadow:  0 0 0 3px Black;
+}
+/*headings*/
+.fs-title {
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+}
+.fs-subtitle {
+    /*font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;*/
+}
+
+#success_message{ display: none;}
+
+
+/*center datapicker in the center*/
+#datepicker-container{
+  text-align:center;
+}
+#datepicker-center{
+  display:inline-block;
+  margin:0 auto;
+}
+
+    </style>
+</head>
+
+
+
+<body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
+    <main>
+      
+      <!-- lets try it -->
+
+      <nav class="navbar navbar-custom navbar-fixed-top navbar-transparent" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+           <span style="font-size:250%;color:blue;">&starf;</span>
+        <span style="font-size:250%;color:blue;">&starf;</span>
+        <span style="font-size:250%;color:blue;">&starf;</span>
+        <span style="font-size:250%;color:blue;">&starf;</span>
+        <span style="font-size:250%;color:grey;">&starf;</span>
+            <!-- <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html"> </a> -->
+
+          
+          </div>
+           <!-- container for contact us , telephone -->
+
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="dropdown"><a  href="#" data-toggle="dropdown"></a>
+               
+             
+                
+              <li class="dropdown" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; "><a  href="#" data-toggle="dropdown" style="color:blue"> +064 </a>
+
+           <!--    <li class="dropdown"><a  data-toggle="dropdown"  href="#menu"  class="btn1 section-scroll " type="submit" style="color: red" > Get a Quote </a> -->
+                
+              </li>
+     
+            </ul>
+          </div> 
+        </div>
+         <div class="container">
+          <div class="navbar-header">
+            <!-- <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">Logo </a> -->
+
+          
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="custom-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li class="dropdown" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; " ><a class="dropdown-toggle" href="index.html" data-toggle="dropdown" style="color:blue">Home</a> -->
+                <ul class="dropdown-menu">
+             
+                </ul>
+              </li>
+              <li class="dropdown" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; "><a class="dropdown-toggle" href="#" data-toggle="dropdown" style="color:blue;">Services</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Local Moves</a>
+                    <ul class="dropdown-menu">
+                      <!-- <li><a href="index_mp_fullscreen_static.html">Fulscreen</a></li> -->
+                    
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Long Distance Moves</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_flexslider.html">Fulscreen</a></li>
+                      <!-- <li><a href="index_mp_classic_flexslider.html">Classic</a></li> -->
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Storage</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_video_background.html">Fulscreen</a></li>
+                      <!-- <li><a href="index_mp_classic_video_background.html">Classic</a></li> -->
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Corporate Moves</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_text_rotator.html">Fulscreen</a></li>
+                      <!-- <li><a href="index_mp_classic_text_rotator.html">Classic</a></li> -->
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Moving Specific Items</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_gradient_overlay.html">Fulscreen</a></li>
+                      <!-- <li><a href="index_mp_classic_gradient_overlay.html">Classic</a></li> -->
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Small Moves</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_gradient_overlay.html">Fulscreen</a></li>
+                      <!-- <li><a href="index_mp_classic_gradient_overlay.html">Classic</a></li> -->
+                    </ul>
+                  </li>
+                   <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Moving Specific Items</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="index_mp_fullscreen_gradient_overlay.html">Fulscreen</a></li>
+                      <!-- <li><a href="index_mp_classic_gradient_overlay.html">Classic</a></li> -->
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; "><a class="dropdown-toggle" href="#" data-toggle="dropdown" style="color:blue;">Tips&Tools</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Important Information</a>
+                   
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Moving Checklist</a>
+                  
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="city-guides.html" data-toggle="dropdown">City Guides</a>
+                   
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Tips for moving</a>
+                  
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Moving Questions</a>
+                    
+                  </li>
+                
+                </ul>
+              </li>
+            
+              <li class="dropdown" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; "><a class="dropdown-toggle" href="#" data-toggle="dropdown" style="color:blue;">About us</a>
+                <ul class="dropdown-menu" role="menu">
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Standard</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog_standard_left_sidebar.html">Left Sidebar</a></li>
+                      <li><a href="blog_standard_right_sidebar.html">Right Sidebar</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Grid</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog_grid_col_2.html">2 Columns</a></li>
+                      <li><a href="blog_grid_col_3.html">3 Columns</a></li>
+                      <li><a href="blog_grid_col_4.html">4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Masonry</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog_grid_masonry_col_2.html">2 Columns</a></li>
+                      <li><a href="blog_grid_masonry_col_3.html">3 Columns</a></li>
+                      <li><a href="blog_grid_masonry_col_4.html">4 Columns</a></li>
+                    </ul>
+                  </li>
+                  <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Single</a>
+                    <ul class="dropdown-menu">
+                      <li><a href="blog_single_left_sidebar.html">Left Sidebar</a></li>
+                      <li><a href="blog_single_right_sidebar.html">Right Sidebar</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <!-- <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Contact us</a> -->
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="alerts-and-wells.html"><i class="fa fa-bolt"></i> Alerts and Wells</a></li>
+                  <li><a href="buttons.html"><i class="fa fa-link fa-sm"></i> Buttons</a></li>
+                  <li><a href="tabs_and_accordions.html"><i class="fa fa-tasks"></i> Tabs &amp; Accordions</a></li>
+                  <li><a href="content_box.html"><i class="fa fa-list-alt"></i> Contents Box</a></li>
+                  <li><a href="forms.html"><i class="fa fa-check-square-o"></i> Forms</a></li>
+                  <li><a href="icons.html"><i class="fa fa-star"></i> Icons</a></li>
+                  <li><a href="progress-bars.html"><i class="fa fa-server"></i> Progress Bars</a></li>
+                  <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
+                </ul>
+              </li>
+     
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <!-- <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+ <!-- <script src="http://code.jquery.com/jquery.min.js"></script> -->
+<!-- <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script> -->
+<!-- <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet" type="text/css" /> -->
+    
+<style>
+.home-section {
+  position: relative;
+  /*background-color: ;*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  /*margin-top: 700px;*/
+  margin-bottom: 230px;
+  z-index: 0;
+  background-size: cover;
+}
+</style>
+ 
+  <section class="home-section home" id="home">
+ <script>
+   $(document).ready(function () {
+    $('#contact_form').bootstrapValidator({
+            // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+            feedbackIcons: {
+                valid: 'glyphicon glyphicon-ok',
+                invalid: 'glyphicon glyphicon-remove',
+                validating: 'glyphicon glyphicon-refresh'
+            },
+            fields: {
+                name: {
+                    validators: {
+                        stringLength: {
+                            min: 2,
+                        },
+                        notEmpty: {
+                            message: 'Please supply your name'
+                        }
+                    }
+                },
+               
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Please supply your email address'
+                        },
+                        emailAddress: {
+                            message: 'Please supply a valid email address'
+                        }
+                    }
+                },
+                phone: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Please supply your phone number'
+                        },
+                        phone: {
+                            country: 'US',
+                            message: 'Please supply a vaild phone number with area code'
+                        }
+                    }
+                },
+                zip: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Please supply your zip code'
+                        },
+                        zipCode: {
+                            country: 'US',
+                            message: 'Please supply a valid zip code'
+                        }
+                    }
+                },
+                
+            }
+        })
+        .on('success.form.bv', function (e) {
+            $('#success_message').slideDown({
+                    opacity: "show"
+                }, "slow") // Do something ...
+            $('#contact_form').data('bootstrapValidator').resetForm();
+
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function (result) {
+                console.log(result);
+            }, 'json');
+        });
+});
+</script>
+
+<!-- </head> -->
+
+<body>
+
+ <form id="msform1" class="msform" >
+        <!-- fieldsets -->
+        <fieldset id="feveryes" >
+        <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; "> Section 1 of 5</p>
+        <h2 class="fs-title" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; ">What type of move do you need?
+        </h2>
+        <input type="button" name="coughyes" class="red next action-button " value="House" />
+          <input type="button" name="coughyes" class="red next action-button" value="Apartament" />
+          <input type="button" name="coughyes" class="red next action-button" value="Office" />
+
+<input type="button" name="coughno" class="red next action-button" value="Other move" />
+  <input type="button" name="previous" class="previous action-button" value="Back" onclick="location.href='index.html';" />
+    </fieldset>
+
+    </form>
+
+
+    <form id="msform2" class="msform">
+        <fieldset id="coughyes">
+         <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; ">Section 2 of 5</p>
+        <h2 class="fs-title" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; ">Move size</h2>
+        <input type="button" name="coughyes" class="red next action-button" value="1 Bedroom" />
+          <input type="button" name="coughyes" class="red next action-button" value="2 Bedrooms" />
+          <input type="button" name="coughyes" class="red next action-button" value="3 Bedrooms" />
+                   <input type="button" name="coughyes" class="red next action-button" value="4+ Bedrooms" />
+
+        <input type="button" name="previous" class="previous action-button" value="Back" />
+    </fieldset>
+    </form>
+
+
+    <form id="msform3" class="msform">
+         <fieldset id="feverno">
+          <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; ">Section 3 of 5</p>
+        <h2 class="fs-title" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; ">Where are you moving?</h2>
+       <input type="button" name="coughyes" class="red next action-button" value="Out of state" />
+          <input type="button" name="coughyes" class="red next action-button" value="In state" />
+          <input type="button" name="coughyes" class="red next action-button" value="Local " />
+        
+        <input type="button" name="previous" class="previous action-button" value="Back" />
+    </fieldset>
+
+    </form>
+
+
+
+        <form id="msform4" class="msform">
+        <fieldset id="coughno">
+           <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; ">Section 4 of 5</p>
+        <h2 class="fs-title" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; ">Select your move date</h2>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  
+  <script>
+ 
+  $(function() {
+    $("#datepicker").datepicker({altField: '#date'});
+
+    $('#submit').click(function() {
+        $('#output').html($('form').serialize());
+    });
+});
+  </script>
+  <div id="datepicker-container">
+  <div id="datepicker-center">
+    <div id="datepicker"></div>
+  </div>
+</div>
+    
+    <input type="hidden" name="date" id="date"><br/>
+    <!-- <input type="button" value="submit (for myself)" id="submit" ></br> -->
+
+<style>
+#datepicker-container{
+  text-align:center;
+}
+#datepicker-center{
+  display:inline-block;
+  margin:0 auto;
+}
+</style>
+<div id="output"></div>
+
+        <input type="button" name="previous" class="previous action-button" value="Back" />
+        <!-- <input type="button"  class=" action-button" value="Next" /> -->
+         <input type="button" name="coughyes" class="red next action-button" value="Next" />
+    </fieldset>
+        </form>
+
+
+<!-- form number 5 -->
+
+  <!-- <div class="container"> -->
+    <form class="msform" action=" " method="post"  id="contact_form">
+        <fieldset id="coughno">
+           <p style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; ">Section 5 of 5</p>
+        <h2 class="fs-title" style="font-family: Arial, Helvetica, sans-serif; font-weight: bold; color:blue; ">Contact Info</h2>
+          
+            <div class="form-group">
+                <label class="control-label"> Name</label>  
+                <div class=" inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input  name="name" placeholder="Name" class="form-control"  type="text">
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Text input-->
+            <div class="form-group">
+                <label class=" control-label">E-Mail</label>  
+                <div class=" inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                    </div>
+                </div>
+            </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class=" control-label">Phone </label>  
+                <div class=" inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                        <input name="phone" placeholder="(xxx)xxx-xx" class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Text input-->
+            <div class="form-group">
+                <label class=" control-label">Destination Zip Code</label>  
+                <div class=" inputGroupContainer">
+                    <div class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-home"></i></span>
+                        <input name="zip" placeholder="Zip Code" class="form-control"  type="text">
+                    </div>
+                </div>
+            </div>
+            <!-- <input type="button" name="previous" class="previous action-button" value="Back" /> -->
+            <!-- Success message -->
+            <div class="alert alert-success" role="alert" id="success_message">Success <i class="glyphicon glyphicon-thumbs-up"></i> Thanks for contacting us, we will get back to you shortly.</div>
+            <!-- Button -->
+ <input type="button" name="previous" class="previous action-button" value="Back" />
+            <div class="form-group">
+              <!--   <label class=" control-label"></label>
+
+                <div class="col-md"> -->
+                
+                  <button type="submit" class="btn btn-warning" >Confirm <span class=""></span></button>
+                </div>
+            </div>
+                <!-- <input type="button" name="previous" class="previous action-button" value="Back" /> -->
+        </fieldset>
+    </form>
+<!-- </div> -->
+</div><!-- /.container -->
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.4.5/js/bootstrapvalidator.min.js'></script>
+
+     </fieldset>
+
+    </form>
+ <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <!-- jQuery easing plugin -->
+    <!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+        <script src="assets/js/jquery.backstretch.min.js"></script>
+        <script src="assets/js/scripts.js"></script>
+        <script src="assets/lib/jquery/dist/jquery.js"></script>
+    <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/lib/wow/dist/wow.js"></script>
+    <script src="assets/lib/jquery.mb.ytplayer/dist/jquery.mb.YTPlayer.js"></script>
+    <script src="assets/lib/isotope/dist/isotope.pkgd.js"></script>
+    <script src="assets/lib/imagesloaded/imagesloaded.pkgd.js"></script>
+    <script src="assets/lib/flexslider/jquery.flexslider.js"></script>
+    <script src="assets/lib/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="assets/lib/smoothscroll.js"></script>
+    <script src="assets/lib/magnific-popup/dist/jquery.magnific-popup.js"></script>
+    <script src="assets/lib/simple-text-rotator/jquery.simple-text-rotator.min.js"></script>
+    <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK2Axt8xiFYMBMDwwG1XzBQvEbYpzCvFU"></script>
+    <script src="assets/js/plugins.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="http://thecodeplayer.com/uploads/js/jquery.easing.min.js" type="text/javascript"></script>
+
+    <script>
+
+    //jQuery time
+    var current_fs, next_fs, previous_fs; //fieldsets
+    var left, opacity, scale; //fieldset properties which we will animate
+    var animating; //flag to prevent quick multi-click glitches
+
+    var numStep = 3;
+    var errStep = false;
+
+    $(".submit").click(function(){
+        var statusStep = false;
+        switch(numStep) {
+            case 1:
+                $.ajax({
+                    beforeSend: function(){
+                        $('#msform1 .loader').show();
+                    }
+                    , cache: false
+                    , type: "POST"
+                    , dataType: "json"
+                    , url: "include/InsertAjaxAccount.inc.php"
+                    , data: $("#msform1").serialize()
+                    , success: function(res){
+                        if(res.err){
+                            errStep = true;
+                            console.error('Custom error: ' + res.errMsg);
+                        }
+                        else{
+                            console.info('OK');
+                            errStep = false;
+                        }
+                        $('#msform1 .loader').hide();
+                    }
+                    , error:function(){
+                        errStep = true;
+                        console.error('System error');
+                        $('#msform1 .loader').hide();
+                    }
+                });
+
+                break;
+            case 2:
+                $.ajax({
+                    beforeSend: function(){
+                        $('#msform2 .loader').show();
+                    }
+                    , cache: false
+                    , type: "POST"
+                    , dataType: "json"
+                    , url: "include/InsertAjaxSocialNetwork.inc.php"
+                    , data: $("#msform2").serialize()
+                    , success: function(res){
+                        if(res.err){
+                            errStep = true;
+                            console.error('Custom error: ' + res.errMsg);
+                        }
+                        else{
+                            console.info('OK');
+                            errStep = false;
+                        }
+                        $('#msform1 .loader').hide();
+                    }
+                    , error:function(){
+                        errStep = true;
+                        console.error('System error');
+                        $('#msform1 .loader').hide();
+                    }
+                });
+
+                break;
+                case 3:
+                            $.ajax({
+                    beforeSend: function(){
+                        $('#msform3 .loader').show();
+                    }
+                    , cache: false
+                    , type: "POST"
+                    , dataType: "json"
+                    , url: "include/InsertAjaxSocialNetwork.inc.php"
+                    , data: $("#msform2").serialize()
+                    , success: function(res){
+                        if(res.err){
+                            errStep = true;
+                            console.error('Custom error: ' + res.errMsg);
+                        }
+                        else{
+                            console.info('OK');
+                            errStep = false;
+                        }
+                        $('#msform3 .loader').hide();
+                    }
+                    , error:function(){
+                        errStep = true;
+                        console.error('System error');
+                        $('#msform1 .loader').hide();
+                    }
+                });
+
+                break;
+                case 4:
+                            $.ajax({
+                    beforeSend: function(){
+                        $('#msform4 .loader').show();
+                    }
+                    , cache: false
+                    , type: "POST"
+                    , dataType: "json"
+                    , url: "include/InsertAjaxSocialNetwork.inc.php"
+                    , data: $("#msform4").serialize()
+                    , success: function(res){
+                        if(res.err){
+                            errStep = true;
+                            console.error('Custom error: ' + res.errMsg);
+                        }
+                        else{
+                            console.info('OK');
+                            errStep = false;
+                        }
+                        $('#msform4 .loader').hide();
+                    }
+                    , error:function(){
+                        errStep = true;
+                        console.error('System error');
+                        $('#msform1 .loader').hide();
+                    }
+                });
+
+                break;
+                // case 5:
+                // $.ajax({
+                //     beforeSend: function(){
+                //         $('#msform5 .loader').show();
+                //     }
+                //     , cache: false
+                //     , type: "POST"
+                //     , dataType: "json"
+                //     , url: "include/InsertAjaxAccount.inc.php"
+                //     , data: $("#msform5").serialize()
+                //     , success: function(res){
+                //         if(res.err){
+                //             errStep = true;
+                //             console.error('Custom error: ' + res.errMsg);
+                //         }
+                //         else{
+                //             console.info('OK');
+                //             errStep = false;
+                //         }
+                //         $('#msform5 .loader').hide();
+                //     }
+                //     , error:function(){
+                //         errStep = true;
+                //         console.error('System error');
+                //         $('#msform5 .loader').hide();
+                //     }
+                // });
+
+                // break;
+              
+            default:
+                console.error('step not recognized: ' + numStep);
+        }
+        return false;
+    });
+
+    $(".next").click(function(){
+        console.log('Error: ' + errStep)
+        if(animating || errStep) return false;
+        animating = true;
+
+        numStep++;
+
+        current_fs = $(this).parent();
+        next_fs = $(this).parent().parent().next().children();
+
+        //activate next step on progressbar using the index of next_fs
+        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+        //show the next fieldset
+        next_fs.show(); 
+        //hide the current fieldset with style
+        current_fs.animate({opacity: 0}, {
+            step: function(now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale current_fs down to 80%
+                scale = 1 - (1 - now) * 0.2;
+                //2. bring next_fs from the right(50%)
+                left = (now * 50)+"%";
+                //3. increase opacity of next_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({'transform': 'scale('+scale+')'});
+                next_fs.css({'left': left, 'opacity': opacity});
+            }, 
+            duration: 800, 
+            complete: function(){
+                current_fs.hide();
+                animating = false;
+            }, 
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+
+        //FOR EXAMPLE
+        document.getElementById('infoEmailAccount').innerText = document.getElementById('emailAccount').value;
+
+        console.log(numStep);
+    });
+
+    $(".previous").click(function(){
+        console.log('Error: ' + errStep)
+        if(animating || errStep) return false;
+        animating = true;
+
+        numStep--;
+
+        current_fs = $(this).parent();
+        previous_fs = $(this).parent().parent().prev().children();
+
+        //de-activate current step on progressbar
+        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+        //show the previous fieldset
+        previous_fs.show(); 
+        //hide the current fieldset with style
+        current_fs.animate({opacity: 0}, {
+            step: function(now, mx) {
+                //as the opacity of current_fs reduces to 0 - stored in "now"
+                //1. scale previous_fs from 80% to 100%
+                scale = 0.8 + (1 - now) * 0.2;
+                //2. take current_fs to the right(50%) - from 0%
+                left = ((1-now) * 50)+"%";
+                //3. increase opacity of previous_fs to 1 as it moves in
+                opacity = 1 - now;
+                current_fs.css({'left': left});
+                previous_fs.css({'transform': 'scale('+scale+')', 'opacity': opacity});
+            }, 
+            duration: 800, 
+            complete: function(){
+                current_fs.hide();
+                animating = false;
+            }, 
+            //this comes from the custom easing plugin
+            easing: 'easeInOutBack'
+        });
+
+        console.log(numStep);
+    });
+
+
+
+    </script>
+</section>
+<section class="" id="home">
+<div class="module-small bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">CONTACT </h5>
+                  <ul class="icon-list">
+                     <li><a href="#">Request a Moving Quote</a></li>
+                        <li><a href="#">Call Us</a></li>
+                        <li><a href="#">We Will Contact You</a></li>
+                        <li><a href="#">Customer Service</a></li>
+                 </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt">MOVING </h5>
+                  <ul class="icon-list">
+                        <li><a href="#">Local Moves</a></li>
+                        <li><a href="#">Long Distance Moves</a></li>
+                        <li><a href="#">Storage</a></li>
+                        <li><a href="#">Corporate Moves</a></li>
+                        <li><a href="#">Residential Moves</a></li>
+                        <li><a href="#">Moving Specific Items</a></li>
+                        <li><a href="#">Small Moves</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt"> TIPS </h5>
+                  <ul class="icon-list">
+                    <li><a href="#">Important Information</a></li>
+                    <li><a href="#">Moving Checklist</a></li>
+                    <li><a href="city-guides">City Guides</a></li>
+                    <li><a href="#">Tips for moving</a></li>
+                    <li><a href="#">Moving Questions</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-3">
+                <div class="widget">
+                  <h5 class="widget-title font-alt"> ABOUT </h5>
+                  <ul class="icon-list">
+                    <li><a href="#">About </a></li>
+                    <li><a href="#">Moving Checklist</a></li>
+                    <li><a href="#">City Guides</a></li>
+                    <li><a href="#">Tips for moving</a></li>
+                    <li><a href="#">Moving Questions</a></li>
+                  </ul>
+                </div>
+              </div>
+           
+            </div>
+          </div>
+        </div>
+        <hr class="divider-d">
+        <footer class="footer bg-dark">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                
+              </div>
+              <div class="col-sm-6">
+                <div class="footer-social-links"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-skype"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
+  </section>
+</main>
+
+
+<!-- <script src="assets/bootstrap/js/bootstrap.min.js"></script> -->
+<!-- <script src="assets/js/jquery.backstretch.min.js"></script> -->
+<!-- plugins for calendar feature -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+
+<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/bootstrap-validator/0.5.3/js/bootstrapValidator.js'></script>
+</body>
+</html>
